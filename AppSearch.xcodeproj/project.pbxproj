@@ -19,8 +19,11 @@
 		52313289172B52A800515686 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52313287172B52A800515686 /* MainStoryboard_iPhone.storyboard */; };
 		5231328C172B52A800515686 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5231328A172B52A800515686 /* MainStoryboard_iPad.storyboard */; };
 		5231328F172B52A900515686 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5231328E172B52A900515686 /* ViewController.m */; };
-		5231329A172B617B00515686 /* AppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52313299172B617B00515686 /* AppsViewController.m */; };
 		5231329D172B620500515686 /* AppsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5231329C172B620500515686 /* AppsView.m */; };
+		524017F0172C564500F8F6C1 /* AppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524017EF172C564500F8F6C1 /* AppsViewController.m */; };
+		524017F2172C565400F8F6C1 /* appsban.png in Resources */ = {isa = PBXBuildFile; fileRef = 524017F1172C565400F8F6C1 /* appsban.png */; };
+		524017F5172C5A6100F8F6C1 /* mainban.png in Resources */ = {isa = PBXBuildFile; fileRef = 524017F4172C5A6100F8F6C1 /* mainban.png */; };
+		524017F7172C672E00F8F6C1 /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 524017F6172C672E00F8F6C1 /* bar.png */; };
 		524915F4172B6AA90035B8C6 /* AppsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 524915F3172B6AA90035B8C6 /* AppsCell.m */; };
 /* End PBXBuildFile section */
 
@@ -42,10 +45,13 @@
 		5231328B172B52A800515686 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		5231328D172B52A800515686 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5231328E172B52A900515686 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		52313298172B617B00515686 /* AppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppsViewController.h; path = ../AppsViewController.h; sourceTree = "<group>"; };
-		52313299172B617B00515686 /* AppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppsViewController.m; path = ../AppsViewController.m; sourceTree = "<group>"; };
 		5231329B172B620500515686 /* AppsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsView.h; sourceTree = "<group>"; };
 		5231329C172B620500515686 /* AppsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsView.m; sourceTree = "<group>"; };
+		524017EE172C564500F8F6C1 /* AppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsViewController.h; sourceTree = "<group>"; };
+		524017EF172C564500F8F6C1 /* AppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsViewController.m; sourceTree = "<group>"; };
+		524017F1172C565400F8F6C1 /* appsban.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appsban.png; path = images/appsban.png; sourceTree = "<group>"; };
+		524017F4172C5A6100F8F6C1 /* mainban.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainban.png; path = images/mainban.png; sourceTree = "<group>"; };
+		524017F6172C672E00F8F6C1 /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar.png; path = images/bar.png; sourceTree = "<group>"; };
 		524915F2172B6AA90035B8C6 /* AppsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsCell.h; sourceTree = "<group>"; };
 		524915F3172B6AA90035B8C6 /* AppsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,10 +106,11 @@
 				5231328A172B52A800515686 /* MainStoryboard_iPad.storyboard */,
 				5231328D172B52A800515686 /* ViewController.h */,
 				5231328E172B52A900515686 /* ViewController.m */,
-				52313298172B617B00515686 /* AppsViewController.h */,
-				52313299172B617B00515686 /* AppsViewController.m */,
+				524017EE172C564500F8F6C1 /* AppsViewController.h */,
+				524017EF172C564500F8F6C1 /* AppsViewController.m */,
 				524915F2172B6AA90035B8C6 /* AppsCell.h */,
 				524915F3172B6AA90035B8C6 /* AppsCell.m */,
+				524017F3172C565800F8F6C1 /* images */,
 				52313276172B52A800515686 /* Supporting Files */,
 			);
 			path = AppSearch;
@@ -123,6 +130,16 @@
 				52313285172B52A800515686 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		524017F3172C565800F8F6C1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				524017F6172C672E00F8F6C1 /* bar.png */,
+				524017F4172C5A6100F8F6C1 /* mainban.png */,
+				524017F1172C565400F8F6C1 /* appsban.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +199,9 @@
 				52313286172B52A800515686 /* Default-568h@2x.png in Resources */,
 				52313289172B52A800515686 /* MainStoryboard_iPhone.storyboard in Resources */,
 				5231328C172B52A800515686 /* MainStoryboard_iPad.storyboard in Resources */,
+				524017F2172C565400F8F6C1 /* appsban.png in Resources */,
+				524017F5172C5A6100F8F6C1 /* mainban.png in Resources */,
+				524017F7172C672E00F8F6C1 /* bar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,9 +215,9 @@
 				5231327C172B52A800515686 /* main.m in Sources */,
 				52313280172B52A800515686 /* AppDelegate.m in Sources */,
 				5231328F172B52A900515686 /* ViewController.m in Sources */,
-				5231329A172B617B00515686 /* AppsViewController.m in Sources */,
 				5231329D172B620500515686 /* AppsView.m in Sources */,
 				524915F4172B6AA90035B8C6 /* AppsCell.m in Sources */,
+				524017F0172C564500F8F6C1 /* AppsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
