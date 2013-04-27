@@ -19,6 +19,9 @@
 		52313289172B52A800515686 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52313287172B52A800515686 /* MainStoryboard_iPhone.storyboard */; };
 		5231328C172B52A800515686 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5231328A172B52A800515686 /* MainStoryboard_iPad.storyboard */; };
 		5231328F172B52A900515686 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5231328E172B52A900515686 /* ViewController.m */; };
+		5231329A172B617B00515686 /* AppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52313299172B617B00515686 /* AppsViewController.m */; };
+		5231329D172B620500515686 /* AppsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5231329C172B620500515686 /* AppsView.m */; };
+		524915F4172B6AA90035B8C6 /* AppsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 524915F3172B6AA90035B8C6 /* AppsCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,12 @@
 		5231328B172B52A800515686 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		5231328D172B52A800515686 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5231328E172B52A900515686 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		52313298172B617B00515686 /* AppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppsViewController.h; path = ../AppsViewController.h; sourceTree = "<group>"; };
+		52313299172B617B00515686 /* AppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppsViewController.m; path = ../AppsViewController.m; sourceTree = "<group>"; };
+		5231329B172B620500515686 /* AppsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsView.h; sourceTree = "<group>"; };
+		5231329C172B620500515686 /* AppsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsView.m; sourceTree = "<group>"; };
+		524915F2172B6AA90035B8C6 /* AppsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsCell.h; sourceTree = "<group>"; };
+		524915F3172B6AA90035B8C6 /* AppsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +94,16 @@
 		52313275172B52A800515686 /* AppSearch */ = {
 			isa = PBXGroup;
 			children = (
-				5231327E172B52A800515686 /* AppDelegate.h */,
-				5231327F172B52A800515686 /* AppDelegate.m */,
+				5231329B172B620500515686 /* AppsView.h */,
+				5231329C172B620500515686 /* AppsView.m */,
 				52313287172B52A800515686 /* MainStoryboard_iPhone.storyboard */,
 				5231328A172B52A800515686 /* MainStoryboard_iPad.storyboard */,
 				5231328D172B52A800515686 /* ViewController.h */,
 				5231328E172B52A900515686 /* ViewController.m */,
+				52313298172B617B00515686 /* AppsViewController.h */,
+				52313299172B617B00515686 /* AppsViewController.m */,
+				524915F2172B6AA90035B8C6 /* AppsCell.h */,
+				524915F3172B6AA90035B8C6 /* AppsCell.m */,
 				52313276172B52A800515686 /* Supporting Files */,
 			);
 			path = AppSearch;
@@ -99,6 +112,8 @@
 		52313276172B52A800515686 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5231327E172B52A800515686 /* AppDelegate.h */,
+				5231327F172B52A800515686 /* AppDelegate.m */,
 				52313277172B52A800515686 /* AppSearch-Info.plist */,
 				52313278172B52A800515686 /* InfoPlist.strings */,
 				5231327B172B52A800515686 /* main.m */,
@@ -180,6 +195,9 @@
 				5231327C172B52A800515686 /* main.m in Sources */,
 				52313280172B52A800515686 /* AppDelegate.m in Sources */,
 				5231328F172B52A900515686 /* ViewController.m in Sources */,
+				5231329A172B617B00515686 /* AppsViewController.m in Sources */,
+				5231329D172B620500515686 /* AppsView.m in Sources */,
+				524915F4172B6AA90035B8C6 /* AppsCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +330,7 @@
 				52313294172B52A900515686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

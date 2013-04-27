@@ -1,26 +1,174 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j99-2k-7ac">
+                                <subviews>
+                                    <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGu-ub-hNd">
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="View1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0f7-Bq-9fZ">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="0f7-Bq-9fZ" firstAttribute="centerX" secondItem="kGu-ub-hNd" secondAttribute="centerX" type="default" id="aIS-m9-Ddd"/>
+                                            <constraint firstAttribute="height" constant="142" id="guA-OS-bR5"/>
+                                            <constraint firstAttribute="width" constant="210" id="jJY-UG-nXd"/>
+                                            <constraint firstItem="0f7-Bq-9fZ" firstAttribute="top" secondItem="kGu-ub-hNd" secondAttribute="top" constant="60" id="qgQ-fz-tPb"/>
+                                        </constraints>
+                                    </view>
+                                    <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUd-gy-VEg">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="230" id="kLu-7p-ta3"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="xxE-Vh-eDf" kind="embed" id="dmx-X8-rmh"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ZUd-gy-VEg" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="BJ0-Wk-IxL"/>
+                                    <constraint firstItem="ZUd-gy-VEg" firstAttribute="trailing" secondItem="j99-2k-7ac" secondAttribute="trailing" type="default" id="Cqs-Q4-475"/>
+                                    <constraint firstItem="kGu-ub-hNd" firstAttribute="leading" secondItem="j99-2k-7ac" secondAttribute="leading" constant="50" id="JqO-NN-YsO"/>
+                                    <constraint firstItem="ZUd-gy-VEg" firstAttribute="leading" secondItem="j99-2k-7ac" secondAttribute="leading" type="default" id="SN9-Lb-Mch"/>
+                                    <constraint firstItem="kGu-ub-hNd" firstAttribute="top" secondItem="j99-2k-7ac" secondAttribute="top" constant="20" symbolic="YES" type="default" id="mVZ-j7-aFh"/>
+                                    <constraint firstItem="ZUd-gy-VEg" firstAttribute="top" secondItem="j99-2k-7ac" secondAttribute="top" constant="210" id="mxq-lD-S4a"/>
+                                    <constraint firstItem="ZUd-gy-VEg" firstAttribute="centerX" secondItem="j99-2k-7ac" secondAttribute="centerX" type="default" id="xEo-cU-mIQ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j99-2k-7ac" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="0dO-cP-wM9"/>
+                            <constraint firstItem="j99-2k-7ac" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="ReB-rC-xlr"/>
+                            <constraint firstItem="j99-2k-7ac" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="cCX-Ak-NMG"/>
+                            <constraint firstItem="j99-2k-7ac" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="fks-CG-nRR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="j99-2k-7ac" id="Ier-al-6me"/>
+                        <outlet property="view1" destination="kGu-ub-hNd" id="5rI-a7-FD0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="52" y="112"/>
+        </scene>
+        <!--Apps View Controller-->
+        <scene sceneID="azi-yy-21B">
+            <objects>
+                <viewController id="xxE-Vh-eDf" customClass="AppsViewController" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PZy-Az-dcK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7KE-9g-b24">
+                                <color key="backgroundColor" red="0.031372550870000002" green="0.92549026010000002" blue="0.95294123890000004" alpha="1" colorSpace="deviceRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cpp-eT-WtZ">
+                                    <size key="itemSize" width="163" height="168"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AppCell" id="JiW-3C-dyw" customClass="AppsCell">
+                                        <rect key="frame" x="0.0" y="31" width="163" height="168"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="163" height="168"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHP-M0-0jp">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.9215686917" green="0.47058826679999999" blue="0.2196078598" alpha="1" colorSpace="deviceRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="eHP-M0-0jp" firstAttribute="top" secondItem="JiW-3C-dyw" secondAttribute="top" constant="38" id="DEt-PI-5hE"/>
+                                            <constraint firstItem="eHP-M0-0jp" firstAttribute="centerX" secondItem="JiW-3C-dyw" secondAttribute="centerX" type="default" id="FLs-r3-7pH"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="appsLabel" destination="eHP-M0-0jp" id="LO7-Te-lAf"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7KE-9g-b24" firstAttribute="top" secondItem="PZy-Az-dcK" secondAttribute="top" type="default" id="BYC-7g-TgB"/>
+                            <constraint firstItem="7KE-9g-b24" firstAttribute="bottom" secondItem="PZy-Az-dcK" secondAttribute="bottom" type="default" id="cOK-uS-95X"/>
+                            <constraint firstItem="7KE-9g-b24" firstAttribute="trailing" secondItem="PZy-Az-dcK" secondAttribute="trailing" type="default" id="lmj-TL-7qK"/>
+                            <constraint firstItem="7KE-9g-b24" firstAttribute="leading" secondItem="PZy-Az-dcK" secondAttribute="leading" type="default" id="oKm-O4-F5D"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="AppsCollectionView" destination="7KE-9g-b24" id="D30-uo-5AT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oiY-Kk-tME" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="461" y="237"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="AppsCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AppsCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="appsLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="AppsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AppsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="AppsCollectionView" candidateClass="UICollectionView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="view1" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
