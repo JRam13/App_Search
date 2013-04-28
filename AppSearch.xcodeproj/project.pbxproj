@@ -19,12 +19,19 @@
 		52313289172B52A800515686 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52313287172B52A800515686 /* MainStoryboard_iPhone.storyboard */; };
 		5231328C172B52A800515686 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5231328A172B52A800515686 /* MainStoryboard_iPad.storyboard */; };
 		5231328F172B52A900515686 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5231328E172B52A900515686 /* ViewController.m */; };
-		5231329D172B620500515686 /* AppsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5231329C172B620500515686 /* AppsView.m */; };
 		524017F0172C564500F8F6C1 /* AppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524017EF172C564500F8F6C1 /* AppsViewController.m */; };
 		524017F2172C565400F8F6C1 /* appsban.png in Resources */ = {isa = PBXBuildFile; fileRef = 524017F1172C565400F8F6C1 /* appsban.png */; };
 		524017F5172C5A6100F8F6C1 /* mainban.png in Resources */ = {isa = PBXBuildFile; fileRef = 524017F4172C5A6100F8F6C1 /* mainban.png */; };
 		524017F7172C672E00F8F6C1 /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 524017F6172C672E00F8F6C1 /* bar.png */; };
+		524017FA172C859400F8F6C1 /* FetchAppData.m in Sources */ = {isa = PBXBuildFile; fileRef = 524017F9172C859400F8F6C1 /* FetchAppData.m */; };
 		524915F4172B6AA90035B8C6 /* AppsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 524915F3172B6AA90035B8C6 /* AppsCell.m */; };
+		525FD172172CD88A004C0E43 /* AlbumsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 525FD171172CD88A004C0E43 /* AlbumsCell.m */; };
+		525FD175172CD93F004C0E43 /* AlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525FD174172CD93F004C0E43 /* AlbumsViewController.m */; };
+		526F8038172CE814005A80A8 /* FetchAlbumData.m in Sources */ = {isa = PBXBuildFile; fileRef = 526F8037172CE813005A80A8 /* FetchAlbumData.m */; };
+		526F803A172CE985005A80A8 /* bar2.png in Resources */ = {isa = PBXBuildFile; fileRef = 526F8039172CE985005A80A8 /* bar2.png */; };
+		526F8040172CFA81005A80A8 /* TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 526F803F172CFA81005A80A8 /* TabBar.m */; };
+		526F8042172D0761005A80A8 /* searchbck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 526F8041172D0761005A80A8 /* searchbck.jpg */; };
+		526F8045172D0916005A80A8 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526F8044172D0916005A80A8 /* SearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,15 +52,27 @@
 		5231328B172B52A800515686 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		5231328D172B52A800515686 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5231328E172B52A900515686 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5231329B172B620500515686 /* AppsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsView.h; sourceTree = "<group>"; };
-		5231329C172B620500515686 /* AppsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsView.m; sourceTree = "<group>"; };
 		524017EE172C564500F8F6C1 /* AppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsViewController.h; sourceTree = "<group>"; };
 		524017EF172C564500F8F6C1 /* AppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsViewController.m; sourceTree = "<group>"; };
 		524017F1172C565400F8F6C1 /* appsban.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appsban.png; path = images/appsban.png; sourceTree = "<group>"; };
 		524017F4172C5A6100F8F6C1 /* mainban.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainban.png; path = images/mainban.png; sourceTree = "<group>"; };
 		524017F6172C672E00F8F6C1 /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar.png; path = images/bar.png; sourceTree = "<group>"; };
+		524017F8172C859400F8F6C1 /* FetchAppData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchAppData.h; sourceTree = "<group>"; };
+		524017F9172C859400F8F6C1 /* FetchAppData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchAppData.m; sourceTree = "<group>"; };
 		524915F2172B6AA90035B8C6 /* AppsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsCell.h; sourceTree = "<group>"; };
 		524915F3172B6AA90035B8C6 /* AppsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsCell.m; sourceTree = "<group>"; };
+		525FD170172CD88A004C0E43 /* AlbumsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumsCell.h; sourceTree = "<group>"; };
+		525FD171172CD88A004C0E43 /* AlbumsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumsCell.m; sourceTree = "<group>"; };
+		525FD173172CD93F004C0E43 /* AlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumsViewController.h; sourceTree = "<group>"; };
+		525FD174172CD93F004C0E43 /* AlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumsViewController.m; sourceTree = "<group>"; };
+		526F8036172CE813005A80A8 /* FetchAlbumData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchAlbumData.h; sourceTree = "<group>"; };
+		526F8037172CE813005A80A8 /* FetchAlbumData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchAlbumData.m; sourceTree = "<group>"; };
+		526F8039172CE985005A80A8 /* bar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar2.png; path = images/bar2.png; sourceTree = "<group>"; };
+		526F803E172CFA81005A80A8 /* TabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBar.h; path = ../TabBar.h; sourceTree = "<group>"; };
+		526F803F172CFA81005A80A8 /* TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBar.m; path = ../TabBar.m; sourceTree = "<group>"; };
+		526F8041172D0761005A80A8 /* searchbck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = searchbck.jpg; path = images/searchbck.jpg; sourceTree = "<group>"; };
+		526F8043172D0916005A80A8 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		526F8044172D0916005A80A8 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,16 +119,9 @@
 		52313275172B52A800515686 /* AppSearch */ = {
 			isa = PBXGroup;
 			children = (
-				5231329B172B620500515686 /* AppsView.h */,
-				5231329C172B620500515686 /* AppsView.m */,
-				52313287172B52A800515686 /* MainStoryboard_iPhone.storyboard */,
-				5231328A172B52A800515686 /* MainStoryboard_iPad.storyboard */,
-				5231328D172B52A800515686 /* ViewController.h */,
-				5231328E172B52A900515686 /* ViewController.m */,
-				524017EE172C564500F8F6C1 /* AppsViewController.h */,
-				524017EF172C564500F8F6C1 /* AppsViewController.m */,
-				524915F2172B6AA90035B8C6 /* AppsCell.h */,
-				524915F3172B6AA90035B8C6 /* AppsCell.m */,
+				524017FB172C859E00F8F6C1 /* model */,
+				524017FC172C861100F8F6C1 /* view */,
+				524017FD172C864300F8F6C1 /* controller */,
 				524017F3172C565800F8F6C1 /* images */,
 				52313276172B52A800515686 /* Supporting Files */,
 			);
@@ -136,10 +148,53 @@
 			isa = PBXGroup;
 			children = (
 				524017F6172C672E00F8F6C1 /* bar.png */,
+				526F8041172D0761005A80A8 /* searchbck.jpg */,
+				526F8039172CE985005A80A8 /* bar2.png */,
 				524017F4172C5A6100F8F6C1 /* mainban.png */,
 				524017F1172C565400F8F6C1 /* appsban.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		524017FB172C859E00F8F6C1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				524017F8172C859400F8F6C1 /* FetchAppData.h */,
+				524017F9172C859400F8F6C1 /* FetchAppData.m */,
+				526F8036172CE813005A80A8 /* FetchAlbumData.h */,
+				526F8037172CE813005A80A8 /* FetchAlbumData.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		524017FC172C861100F8F6C1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				52313287172B52A800515686 /* MainStoryboard_iPhone.storyboard */,
+				5231328A172B52A800515686 /* MainStoryboard_iPad.storyboard */,
+				524915F2172B6AA90035B8C6 /* AppsCell.h */,
+				524915F3172B6AA90035B8C6 /* AppsCell.m */,
+				525FD170172CD88A004C0E43 /* AlbumsCell.h */,
+				525FD171172CD88A004C0E43 /* AlbumsCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		524017FD172C864300F8F6C1 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				526F803E172CFA81005A80A8 /* TabBar.h */,
+				526F803F172CFA81005A80A8 /* TabBar.m */,
+				526F8043172D0916005A80A8 /* SearchViewController.h */,
+				526F8044172D0916005A80A8 /* SearchViewController.m */,
+				5231328D172B52A800515686 /* ViewController.h */,
+				5231328E172B52A900515686 /* ViewController.m */,
+				524017EE172C564500F8F6C1 /* AppsViewController.h */,
+				524017EF172C564500F8F6C1 /* AppsViewController.m */,
+				525FD173172CD93F004C0E43 /* AlbumsViewController.h */,
+				525FD174172CD93F004C0E43 /* AlbumsViewController.m */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +257,8 @@
 				524017F2172C565400F8F6C1 /* appsban.png in Resources */,
 				524017F5172C5A6100F8F6C1 /* mainban.png in Resources */,
 				524017F7172C672E00F8F6C1 /* bar.png in Resources */,
+				526F803A172CE985005A80A8 /* bar2.png in Resources */,
+				526F8042172D0761005A80A8 /* searchbck.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +272,14 @@
 				5231327C172B52A800515686 /* main.m in Sources */,
 				52313280172B52A800515686 /* AppDelegate.m in Sources */,
 				5231328F172B52A900515686 /* ViewController.m in Sources */,
-				5231329D172B620500515686 /* AppsView.m in Sources */,
 				524915F4172B6AA90035B8C6 /* AppsCell.m in Sources */,
 				524017F0172C564500F8F6C1 /* AppsViewController.m in Sources */,
+				524017FA172C859400F8F6C1 /* FetchAppData.m in Sources */,
+				525FD172172CD88A004C0E43 /* AlbumsCell.m in Sources */,
+				525FD175172CD93F004C0E43 /* AlbumsViewController.m in Sources */,
+				526F8038172CE814005A80A8 /* FetchAlbumData.m in Sources */,
+				526F8040172CFA81005A80A8 /* TabBar.m in Sources */,
+				526F8045172D0916005A80A8 /* SearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

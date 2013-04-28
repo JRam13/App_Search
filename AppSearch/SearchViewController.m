@@ -1,29 +1,23 @@
 //
-//  ViewController.m
+//  SearchViewController.m
 //  AppSearch
 //
-//  Created by JRamos on 4/26/13.
+//  Created by JRamos on 4/28/13.
 //  Copyright (c) 2013 JRamos. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SearchViewController.h"
 
-@interface ViewController ()
+@interface SearchViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SearchViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-}
-
--(void)viewDidAppear:(BOOL)animated{
-    
-    self.scrollView.contentSize = CGSizeMake(320,570);
-    
+	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

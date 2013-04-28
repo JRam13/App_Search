@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AppsCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *appsLabelImage;
 @property (weak, nonatomic) IBOutlet UILabel *appsLabel;
 
 @end

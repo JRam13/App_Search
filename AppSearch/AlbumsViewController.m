@@ -1,23 +1,23 @@
 //
-//  AppsViewController.m
+//  AlbumsViewController.m
 //  AppSearch
 //
-//  Created by JRamos on 4/26/13.
+//  Created by JRamos on 4/27/13.
 //  Copyright (c) 2013 JRamos. All rights reserved.
 //
 
-#import "AppsViewController.h"
-#import "AppsCell.h"
-#import "FetchAppData.h"
+#import "AlbumsViewController.h"
+#import "FetchAlbumData.h"
+#import "AlbumsCell.h"
 
-@interface AppsViewController ()
+@interface AlbumsViewController ()
 {
-    FetchAppData *appData;
+    FetchAlbumData *appData;
 }
 
 @end
 
-@implementation AppsViewController
+@implementation AlbumsViewController
 {
     NSTimer *_timer;
 }
@@ -26,22 +26,22 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidLoad];
-    NSLog(@"APPS ViewDidLoad start");
+    NSLog(@"ALBUMS ViewDidLoad start");
 	// Do any additional setup after loading the view.
     
-    [[self AppsCollectionView]setDelegate:self];
-    [[self AppsCollectionView]setDataSource:self];
+    [[self AlbumsCollectionView]setDelegate:self];
+    [[self AlbumsCollectionView]setDataSource:self];
     
-    _appsLabels = [[NSMutableArray alloc] init];
-    _appsLabelsImage = [[NSMutableArray alloc] init];
-    appData = [FetchAppData sharedInstance];
+    _albumLabels = [[NSMutableArray alloc] initWithObjects:@"1", nil];
+    _albumLabelsImage = [[NSMutableArray alloc] init];
+    appData = [FetchAlbumData sharedInstance];
     
     _timer = [NSTimer scheduledTimerWithTimeInterval:.2f
                                               target:self
                                             selector:@selector(reload)
                                             userInfo:nil
                                              repeats:YES];
-
+    
     
 }
 
@@ -51,10 +51,10 @@
         [_timer invalidate];
     }
     
-    _appsLabels = appData.arrayOfTitles;
-    _appsLabelsImage = appData.arrayOfImages;
+    _albumLabels = appData.arrayOfTitles;
+    _albumLabelsImage = appData.arrayOfImages;
     
-    [self.AppsCollectionView reloadData];
+    [self.AlbumsCollectionView reloadData];
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -73,10 +73,10 @@
     //NSLog(@"ArrayofTitles count: %d", [appData.arrayOfTitles count]);
     
     
-    static NSString *CellIndentifier = @"AppCell";
-    AppsCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIndentifier forIndexPath:indexPath];
-    [[cell appsLabel]setText:[_appsLabels objectAtIndex:indexPath.item]];
-    [[cell appsLabelImage]setImage:[_appsLabelsImage objectAtIndex:indexPath.item]];
+    static NSString *CellIndentifier = @"AlbumCell";
+    AlbumsCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIndentifier forIndexPath:indexPath];
+    [[cell albumLabel]setText:[_albumLabels objectAtIndex:indexPath.item]];
+    [[cell albumLabelImage]setImage:[_albumLabelsImage objectAtIndex:indexPath.item]];
     return cell;
 }
 

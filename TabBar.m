@@ -1,14 +1,14 @@
 //
-//  AppsView.m
+//  TabBar.m
 //  AppSearch
 //
-//  Created by JRamos on 4/26/13.
+//  Created by JRamos on 4/28/13.
 //  Copyright (c) 2013 JRamos. All rights reserved.
 //
 
-#import "AppsView.h"
+#import "TabBar.h"
 
-@implementation AppsView
+@implementation TabBar
 
 - (id)initWithFrame:(CGRect)frame
 {
