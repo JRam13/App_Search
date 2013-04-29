@@ -12,5 +12,6 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *AlbumsCollectionView;
 @property (strong, nonatomic) NSMutableArray *albumLabels;
 @property (strong, nonatomic) NSMutableArray *albumLabelsImage;
+@property (strong, nonatomic) NSMutableArray *albumButtonImages;
 
 @end

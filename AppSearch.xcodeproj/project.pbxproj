@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522F698A172E166B00D88D32 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522F6989172E166B00D88D32 /* DetailViewController.m */; };
 		52313270172B52A800515686 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5231326F172B52A800515686 /* UIKit.framework */; };
 		52313272172B52A800515686 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52313271172B52A800515686 /* Foundation.framework */; };
 		52313274172B52A800515686 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52313273172B52A800515686 /* CoreGraphics.framework */; };
@@ -32,9 +33,22 @@
 		526F8040172CFA81005A80A8 /* TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 526F803F172CFA81005A80A8 /* TabBar.m */; };
 		526F8042172D0761005A80A8 /* searchbck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 526F8041172D0761005A80A8 /* searchbck.jpg */; };
 		526F8045172D0916005A80A8 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526F8044172D0916005A80A8 /* SearchViewController.m */; };
+		52D78B5C172DA14500B58C49 /* FetchSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D78B5B172DA14500B58C49 /* FetchSearchResults.m */; };
+		52D78B5E172DBCBF00B58C49 /* 5stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D78B5D172DBCBF00B58C49 /* 5stars.png */; };
+		52D78B63172DBE5900B58C49 /* 1stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D78B5F172DBE5900B58C49 /* 1stars.png */; };
+		52D78B64172DBE5900B58C49 /* 2stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D78B60172DBE5900B58C49 /* 2stars.png */; };
+		52D78B65172DBE5900B58C49 /* 3stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D78B61172DBE5900B58C49 /* 3stars.png */; };
+		52D78B66172DBE5900B58C49 /* 4stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D78B62172DBE5900B58C49 /* 4stars.png */; };
+		52D78B68172DC1AE00B58C49 /* 0stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D78B67172DC1AE00B58C49 /* 0stars.png */; };
+		52F8481D172D8C4F00F4B20C /* searchcell.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F8481C172D8C4F00F4B20C /* searchcell.png */; };
+		52F84820172D8D6500F4B20C /* SearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F8481F172D8D6500F4B20C /* SearchCell.m */; };
+		52F84822172D960E00F4B20C /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F84821172D960E00F4B20C /* star.png */; };
+		52F84825172D971400F4B20C /* SearchHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F84824172D971400F4B20C /* SearchHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		522F6988172E166B00D88D32 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		522F6989172E166B00D88D32 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		5231326C172B52A800515686 /* AppSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5231326F172B52A800515686 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		52313271172B52A800515686 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,6 +87,20 @@
 		526F8041172D0761005A80A8 /* searchbck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = searchbck.jpg; path = images/searchbck.jpg; sourceTree = "<group>"; };
 		526F8043172D0916005A80A8 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		526F8044172D0916005A80A8 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		52D78B5A172DA14500B58C49 /* FetchSearchResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchSearchResults.h; sourceTree = "<group>"; };
+		52D78B5B172DA14500B58C49 /* FetchSearchResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchSearchResults.m; sourceTree = "<group>"; };
+		52D78B5D172DBCBF00B58C49 /* 5stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 5stars.png; path = images/5stars.png; sourceTree = "<group>"; };
+		52D78B5F172DBE5900B58C49 /* 1stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1stars.png; path = images/1stars.png; sourceTree = "<group>"; };
+		52D78B60172DBE5900B58C49 /* 2stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2stars.png; path = images/2stars.png; sourceTree = "<group>"; };
+		52D78B61172DBE5900B58C49 /* 3stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3stars.png; path = images/3stars.png; sourceTree = "<group>"; };
+		52D78B62172DBE5900B58C49 /* 4stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4stars.png; path = images/4stars.png; sourceTree = "<group>"; };
+		52D78B67172DC1AE00B58C49 /* 0stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 0stars.png; path = images/0stars.png; sourceTree = "<group>"; };
+		52F8481C172D8C4F00F4B20C /* searchcell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = searchcell.png; path = images/searchcell.png; sourceTree = "<group>"; };
+		52F8481E172D8D6500F4B20C /* SearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCell.h; sourceTree = "<group>"; };
+		52F8481F172D8D6500F4B20C /* SearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCell.m; sourceTree = "<group>"; };
+		52F84821172D960E00F4B20C /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = images/star.png; sourceTree = "<group>"; };
+		52F84823172D971400F4B20C /* SearchHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchHeader.h; sourceTree = "<group>"; };
+		52F84824172D971400F4B20C /* SearchHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +177,14 @@
 			children = (
 				524017F6172C672E00F8F6C1 /* bar.png */,
 				526F8041172D0761005A80A8 /* searchbck.jpg */,
+				52F84821172D960E00F4B20C /* star.png */,
+				52D78B5D172DBCBF00B58C49 /* 5stars.png */,
+				52D78B5F172DBE5900B58C49 /* 1stars.png */,
+				52D78B67172DC1AE00B58C49 /* 0stars.png */,
+				52D78B60172DBE5900B58C49 /* 2stars.png */,
+				52D78B61172DBE5900B58C49 /* 3stars.png */,
+				52D78B62172DBE5900B58C49 /* 4stars.png */,
+				52F8481C172D8C4F00F4B20C /* searchcell.png */,
 				526F8039172CE985005A80A8 /* bar2.png */,
 				524017F4172C5A6100F8F6C1 /* mainban.png */,
 				524017F1172C565400F8F6C1 /* appsban.png */,
@@ -163,6 +199,8 @@
 				524017F9172C859400F8F6C1 /* FetchAppData.m */,
 				526F8036172CE813005A80A8 /* FetchAlbumData.h */,
 				526F8037172CE813005A80A8 /* FetchAlbumData.m */,
+				52D78B5A172DA14500B58C49 /* FetchSearchResults.h */,
+				52D78B5B172DA14500B58C49 /* FetchSearchResults.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -176,6 +214,10 @@
 				524915F3172B6AA90035B8C6 /* AppsCell.m */,
 				525FD170172CD88A004C0E43 /* AlbumsCell.h */,
 				525FD171172CD88A004C0E43 /* AlbumsCell.m */,
+				52F8481E172D8D6500F4B20C /* SearchCell.h */,
+				52F8481F172D8D6500F4B20C /* SearchCell.m */,
+				52F84823172D971400F4B20C /* SearchHeader.h */,
+				52F84824172D971400F4B20C /* SearchHeader.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -185,14 +227,16 @@
 			children = (
 				526F803E172CFA81005A80A8 /* TabBar.h */,
 				526F803F172CFA81005A80A8 /* TabBar.m */,
-				526F8043172D0916005A80A8 /* SearchViewController.h */,
-				526F8044172D0916005A80A8 /* SearchViewController.m */,
 				5231328D172B52A800515686 /* ViewController.h */,
 				5231328E172B52A900515686 /* ViewController.m */,
+				526F8043172D0916005A80A8 /* SearchViewController.h */,
+				526F8044172D0916005A80A8 /* SearchViewController.m */,
 				524017EE172C564500F8F6C1 /* AppsViewController.h */,
 				524017EF172C564500F8F6C1 /* AppsViewController.m */,
 				525FD173172CD93F004C0E43 /* AlbumsViewController.h */,
 				525FD174172CD93F004C0E43 /* AlbumsViewController.m */,
+				522F6988172E166B00D88D32 /* DetailViewController.h */,
+				522F6989172E166B00D88D32 /* DetailViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -259,6 +303,14 @@
 				524017F7172C672E00F8F6C1 /* bar.png in Resources */,
 				526F803A172CE985005A80A8 /* bar2.png in Resources */,
 				526F8042172D0761005A80A8 /* searchbck.jpg in Resources */,
+				52F8481D172D8C4F00F4B20C /* searchcell.png in Resources */,
+				52F84822172D960E00F4B20C /* star.png in Resources */,
+				52D78B5E172DBCBF00B58C49 /* 5stars.png in Resources */,
+				52D78B63172DBE5900B58C49 /* 1stars.png in Resources */,
+				52D78B64172DBE5900B58C49 /* 2stars.png in Resources */,
+				52D78B65172DBE5900B58C49 /* 3stars.png in Resources */,
+				52D78B66172DBE5900B58C49 /* 4stars.png in Resources */,
+				52D78B68172DC1AE00B58C49 /* 0stars.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +332,10 @@
 				526F8038172CE814005A80A8 /* FetchAlbumData.m in Sources */,
 				526F8040172CFA81005A80A8 /* TabBar.m in Sources */,
 				526F8045172D0916005A80A8 /* SearchViewController.m in Sources */,
+				52F84820172D8D6500F4B20C /* SearchCell.m in Sources */,
+				52F84825172D971400F4B20C /* SearchHeader.m in Sources */,
+				52D78B5C172DA14500B58C49 /* FetchSearchResults.m in Sources */,
+				522F698A172E166B00D88D32 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,8 +32,9 @@
     [[self AlbumsCollectionView]setDelegate:self];
     [[self AlbumsCollectionView]setDataSource:self];
     
-    _albumLabels = [[NSMutableArray alloc] initWithObjects:@"1", nil];
-    _albumLabelsImage = [[NSMutableArray alloc] init];
+    _albumLabels = [[NSMutableArray alloc] init];
+    //_albumLabelsImage = [[NSMutableArray alloc] init];
+    _albumButtonImages = [[NSMutableArray alloc]init];
     appData = [FetchAlbumData sharedInstance];
     
     _timer = [NSTimer scheduledTimerWithTimeInterval:.2f
@@ -47,12 +48,13 @@
 
 -(void)reload
 {
-    if([appData.arrayOfTitles count] == 10){
+    if([appData.arrayOfTitles count] == 25){
         [_timer invalidate];
     }
     
     _albumLabels = appData.arrayOfTitles;
-    _albumLabelsImage = appData.arrayOfImages;
+    //_albumLabelsImage = appData.arrayOfImages;
+    _albumButtonImages = appData.arrayOfImages;
     
     [self.AlbumsCollectionView reloadData];
 }
@@ -76,7 +78,8 @@
     static NSString *CellIndentifier = @"AlbumCell";
     AlbumsCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIndentifier forIndexPath:indexPath];
     [[cell albumLabel]setText:[_albumLabels objectAtIndex:indexPath.item]];
-    [[cell albumLabelImage]setImage:[_albumLabelsImage objectAtIndex:indexPath.item]];
+    
+    [[cell albumButtonImage]setImage:[_albumButtonImages objectAtIndex:indexPath.item] forState:UIControlStateNormal];
     return cell;
 }
 

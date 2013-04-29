@@ -11,6 +11,6 @@
 @interface AppsViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *AppsCollectionView;
 @property (strong, nonatomic) NSMutableArray *appsLabels;
-@property (strong, nonatomic) NSMutableArray *appsLabelsImage;
+@property (strong, nonatomic) NSMutableArray *appsButtonImages;
 
 @end

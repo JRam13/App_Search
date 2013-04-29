@@ -36,7 +36,7 @@ static FetchAppData *sharedInstance = nil;
     
     if (self) {
         
-        NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/us/rss/topfreeapplications/limit=10/json"];
+        NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/us/rss/topfreeapplications/limit=25/json"];
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
         
         connection = [NSURLConnection connectionWithRequest:request delegate:self];

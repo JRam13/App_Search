@@ -33,7 +33,7 @@
     [[self AppsCollectionView]setDataSource:self];
     
     _appsLabels = [[NSMutableArray alloc] init];
-    _appsLabelsImage = [[NSMutableArray alloc] init];
+    _appsButtonImages = [[NSMutableArray alloc] init];
     appData = [FetchAppData sharedInstance];
     
     _timer = [NSTimer scheduledTimerWithTimeInterval:.2f
@@ -47,12 +47,12 @@
 
 -(void)reload
 {
-    if([appData.arrayOfTitles count] == 10){
+    if([appData.arrayOfTitles count] == 25){
         [_timer invalidate];
     }
     
     _appsLabels = appData.arrayOfTitles;
-    _appsLabelsImage = appData.arrayOfImages;
+    _appsButtonImages = appData.arrayOfImages;
     
     [self.AppsCollectionView reloadData];
 }
@@ -76,7 +76,7 @@
     static NSString *CellIndentifier = @"AppCell";
     AppsCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIndentifier forIndexPath:indexPath];
     [[cell appsLabel]setText:[_appsLabels objectAtIndex:indexPath.item]];
-    [[cell appsLabelImage]setImage:[_appsLabelsImage objectAtIndex:indexPath.item]];
+    [[cell appsButtonImage]setImage:[_appsButtonImages objectAtIndex:indexPath.item] forState:UIControlStateNormal];
     return cell;
 }
 

@@ -34,7 +34,7 @@ static FetchAlbumData *sharedInstance = nil;
     
     if (self) {
         
-        NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/us/rss/topalbums/limit=10/json"];
+        NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/us/rss/topalbums/limit=25/json"];
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
         
         connection = [NSURLConnection connectionWithRequest:request delegate:self];
