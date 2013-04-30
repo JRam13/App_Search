@@ -19,6 +19,9 @@
 @property (strong, nonatomic) NSMutableArray *arrayOfBuyLinks;
 @property (weak, nonatomic) NSString * passURL;
 
+@property (nonatomic) BOOL sortByAuthor;
+@property (nonatomic) BOOL sortByRating;
+
 
 + (id)sharedInstance;
 - (void)runQuery;

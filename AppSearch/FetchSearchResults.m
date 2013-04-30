@@ -16,6 +16,7 @@
     
     NSMutableArray *results;
     
+    
 }
 @synthesize passURL;
 
@@ -102,15 +103,17 @@ static FetchSearchResults *sharedInstance = nil;
         
         NSMutableDictionary *mutableResults = [NSMutableDictionary dictionaryWithDictionary:allSearchDataDictionary];
         
+        NSMutableArray *resultsArray;
+        
         /*
          
-         FOLLOWING CODE HELP BY ALEX SILVA (SORTING)
-         
+         FOLLOWING CODE HELP BY ALEX SILVA
+         --------------------------------------------------------------
          */
         
-        
+        if(_sortByRating){
         //sort results by rating
-        NSMutableArray *resultsArray = [mutableResults[@"results"] mutableCopy];
+        resultsArray = [mutableResults[@"results"] mutableCopy];
         [resultsArray sortUsingComparator:^(NSDictionary* dict1, NSDictionary* dict2) {
             
             
@@ -120,7 +123,28 @@ static FetchSearchResults *sharedInstance = nil;
             return [rating2 compare: rating1];
             
         }];
+        }
         
+        /*
+         
+         ---------------------------------------------------------------
+         
+         */
+        
+        if(_sortByAuthor){
+        //sort by seller name
+        resultsArray = [mutableResults[@"results"] mutableCopy];
+        [resultsArray sortUsingComparator:^(NSDictionary* dict1, NSDictionary* dict2) {
+            
+            
+            NSString *rating1 = [dict1 objectForKey:@"sellerName"] ;
+            NSString *rating2 = [dict2 objectForKey:@"sellerName"] ;
+            
+            return [rating1 compare: rating2];
+            
+        }];
+        
+        }
         
         //NSLog(@"last object: %@", resultsArray);
         for (NSDictionary *diction in resultsArray) {

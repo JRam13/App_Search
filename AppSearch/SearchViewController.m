@@ -128,16 +128,53 @@
 
 - (void) searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
+
+    
+    
     searchQuery = searchBar.text;
     searchResults.passURL = searchQuery;
     NSLog(@"search button clicked");
-    [searchResults runQuery];
+    //[searchResults runQuery];
     
     
     [[headerView SearchStarImageLeft]setImage:[UIImage imageNamed:@"star.png"]];
     [[headerView SearchStarImageRight]setImage:[UIImage imageNamed:@"star.png"]];
     
     [searchBar resignFirstResponder];
+    
+    
+    UIAlertView *sortByAlert;
+    
+    sortByAlert = [[UIAlertView alloc] initWithTitle:nil message:@"Sort By" delegate:self cancelButtonTitle:@"Author" otherButtonTitles:@"Rating", nil];
+    
+    
+    [sortByAlert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    
+    [searchResults.arrayOfTitles removeAllObjects];
+    
+    _timer = [NSTimer scheduledTimerWithTimeInterval:.2f
+                                              target:self
+                                            selector:@selector(reload)
+                                            userInfo:nil
+                                             repeats:YES];
+    
+    
+    if (buttonIndex == 0) {
+        searchResults.sortByAuthor = YES;
+        searchResults.sortByRating = NO;
+        
+    }
+    else{
+        searchResults.sortByRating = YES;
+        searchResults.sortByAuthor = NO;
+    }
+    
+    [searchResults runQuery];
+    [self reload];
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
