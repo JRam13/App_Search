@@ -52,6 +52,7 @@
 		52F84820172D8D6500F4B20C /* SearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F8481F172D8D6500F4B20C /* SearchCell.m */; };
 		52F84822172D960E00F4B20C /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F84821172D960E00F4B20C /* star.png */; };
 		52F84825172D971400F4B20C /* SearchHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F84824172D971400F4B20C /* SearchHeader.m */; };
+		52FAD42817302DBD00365F71 /* favcell.png in Resources */ = {isa = PBXBuildFile; fileRef = 52FAD42717302DBD00365F71 /* favcell.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +120,7 @@
 		52F84821172D960E00F4B20C /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = images/star.png; sourceTree = "<group>"; };
 		52F84823172D971400F4B20C /* SearchHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchHeader.h; sourceTree = "<group>"; };
 		52F84824172D971400F4B20C /* SearchHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchHeader.m; sourceTree = "<group>"; };
+		52FAD42717302DBD00365F71 /* favcell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = favcell.png; path = images/favcell.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 				52F84821172D960E00F4B20C /* star.png */,
 				52E5B5F5172F7FBF001F13E7 /* corkboard.jpg */,
 				523BE291172F39FC004ABA19 /* cancel.png */,
+				52FAD42717302DBD00365F71 /* favcell.png */,
 				52D78B5D172DBCBF00B58C49 /* 5stars.png */,
 				523BE299172F40C5004ABA19 /* button.png */,
 				523BE297172F3E53004ABA19 /* purchase.png */,
@@ -344,6 +347,7 @@
 				523BE298172F3E53004ABA19 /* purchase.png in Resources */,
 				523BE29A172F40C5004ABA19 /* button.png in Resources */,
 				52E5B5F6172F7FBF001F13E7 /* corkboard.jpg in Resources */,
+				52FAD42817302DBD00365F71 /* favcell.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
