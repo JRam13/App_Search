@@ -24,6 +24,8 @@
 @property (strong, nonatomic) NSMutableArray *searchImages;
 @property (strong, nonatomic) NSMutableArray *searchRatingsImages;
 @property (strong, nonatomic) NSMutableArray *searchRatingsInt;
+@property (strong, nonatomic) NSMutableArray *description;
+
 
 
 

@@ -18,6 +18,16 @@
     NSString * searchQuery;
     FetchSearchResults * searchResults;
     NSTimer *_timer;
+    
+    //Current App to select
+    NSString * currTitle;
+    NSString * currAuthor;
+    NSString * currPrice;
+    NSObject * currImage;
+    NSObject * currImageRating;
+    
+    DetailViewController *dvc2;
+    
 }
 
 @end
@@ -38,6 +48,7 @@
     _searchImages = [[NSMutableArray alloc] init];
     _searchRatingsImages = [[NSMutableArray alloc] init];
     _searchRatingsInt = [[NSMutableArray alloc] init];
+    _description = [[NSMutableArray alloc] init];
 
     
     searchResults = [FetchSearchResults sharedInstance];
@@ -61,6 +72,7 @@
     _searchImages = searchResults.arrayOfImages;
     _searchRatingsImages = searchResults.arrayOfRatings;
     _searchRatingsInt = searchResults.arrayOfRatingsInt;
+    _description = searchResults.arrayOfDescriptions;
 
     
     [self.searchCollectionView reloadData];
@@ -134,21 +146,30 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Selected!!!");
+    
+    dvc2.detailTitle = [_searchTitleLabels objectAtIndex:indexPath.item];
+    dvc2.detailAuthor = [_searchAuthorLabels objectAtIndex:indexPath.item];
+    dvc2.detailPrice = [_searchPriceLabels objectAtIndex:indexPath.item];
+    dvc2.detailImageBig = [_searchImages objectAtIndex:indexPath.item];
+    dvc2.detailImageRating = [_searchRatingsImages objectAtIndex:indexPath.item];
+    dvc2.detailDescription = [_description objectAtIndex:indexPath.item];
+    [dvc2 displayDetails];
+    
 
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"segueDetail"]){
-        
-        DetailViewController *dvc = (DetailViewController*)segue.destinationViewController;
-        
-        dvc.delegate = self;
-        
-        
+        dvc2 = (DetailViewController*)segue.destinationViewController;
     
     }
+}
+
+- (void)detailsViewDidDismiss: (DetailViewController*)dvc
+{
+    //[self dismissViewControllerAnimated:YES completion:NULL];
+    
 }
 
 

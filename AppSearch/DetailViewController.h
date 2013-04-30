@@ -21,6 +21,22 @@
 
 @property (nonatomic, weak) id <ModalDelegate> delegate;
 
+@property (weak, nonatomic) NSString * detailTitle;
+@property (weak, nonatomic) NSString * detailAuthor;
+@property (weak, nonatomic) NSString * detailPrice;
+@property (weak, nonatomic) NSString * detailDescription;
+@property (weak, nonatomic) UIImage * detailImageBig;
+@property (weak, nonatomic) UIImage * detailImageRating;
+
+@property (weak, nonatomic) IBOutlet UIImageView *detailImage;
+@property (weak, nonatomic) IBOutlet UIImageView *detailRanking;
+@property (weak, nonatomic) IBOutlet UILabel *detailTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *detailAuthorLabel;
+@property (weak, nonatomic) IBOutlet UILabel *detailPriceLabel;
+@property (weak, nonatomic) IBOutlet UITextView *detailDescriptionText;
+
+- (IBAction)addToFavorites:(UIButton *)sender;
+-(void)displayDetails;
 
 
 @end
