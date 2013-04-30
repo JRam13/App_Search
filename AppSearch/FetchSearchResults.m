@@ -47,7 +47,7 @@ static FetchSearchResults *sharedInstance = nil;
     
     NSString *replaceSpace = [passURL stringByReplacingOccurrencesOfString:@" " withString:@"+"];
     
-    NSString *currentQuery = [NSString stringWithFormat: @"https://itunes.apple.com/search?term=%@&media=software&country=us", replaceSpace];
+    NSString *currentQuery = [NSString stringWithFormat: @"https://itunes.apple.com/search?term=%@&country=us&entity=software", replaceSpace];
     NSURL *url1 = [NSURL URLWithString:currentQuery];
     NSURLRequest *request = [NSURLRequest requestWithURL:url1];
     
@@ -64,6 +64,7 @@ static FetchSearchResults *sharedInstance = nil;
         _arrayOfRatings = [[NSMutableArray alloc] init];
         _arrayOfRatingsInt = [[NSMutableArray alloc] init];
         _arrayOfDescriptions = [[NSMutableArray alloc]init];
+        _arrayOfBuyLinks = [[NSMutableArray alloc]init];
         
     }
     
@@ -142,6 +143,8 @@ static FetchSearchResults *sharedInstance = nil;
             
             NSString *desc = [diction objectForKey:@"description"];
             
+            NSString *buy = [diction objectForKey:@"trackViewUrl"];
+            
             
             // dispatch_sync(dispatch_get_main_queue(), ^{
             [_arrayOfTitles addObject:label];
@@ -152,6 +155,7 @@ static FetchSearchResults *sharedInstance = nil;
             [_arrayOfRatings addObject:ratingsImage];
             [_arrayOfRatingsInt addObject:ratingString];
             [_arrayOfDescriptions addObject:desc];
+            [_arrayOfBuyLinks addObject:buy];
             //NSLog(@"Description from fetch: %@", desc);
             //});
             //NSLog(@"Title: %@", label);

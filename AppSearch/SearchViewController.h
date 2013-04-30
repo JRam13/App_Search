@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "DetailViewController.h"
 
-@interface SearchViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate, ModalDelegate>
+@interface SearchViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate, ModalDelegate,
+UIAlertViewDelegate>
 {
     DetailViewController *dvc;
 }
@@ -25,6 +26,8 @@
 @property (strong, nonatomic) NSMutableArray *searchRatingsImages;
 @property (strong, nonatomic) NSMutableArray *searchRatingsInt;
 @property (strong, nonatomic) NSMutableArray *description;
+@property (strong, nonatomic) NSMutableArray *buyLink;
+
 
 
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FavoritesViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface FavoritesViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *favoritesCollectionView;
 
 @property (strong, nonatomic) NSMutableArray *favoriteTitles;

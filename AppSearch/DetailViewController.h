@@ -16,7 +16,7 @@
 
 @end
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <UIAlertViewDelegate>
 - (IBAction)dismissBTN:(UIButton *)sender;
 
 @property (nonatomic, weak) id <ModalDelegate> delegate;
@@ -25,6 +25,7 @@
 @property (weak, nonatomic) NSString * detailAuthor;
 @property (weak, nonatomic) NSString * detailPrice;
 @property (weak, nonatomic) NSString * detailDescription;
+@property (weak, nonatomic) NSString * detailBuyLink;
 @property (weak, nonatomic) UIImage * detailImageBig;
 @property (weak, nonatomic) UIImage * detailImageRating;
 
@@ -36,6 +37,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *detailDescriptionText;
 
 - (IBAction)addToFavorites:(UIButton *)sender;
+- (IBAction)purchaseBtn:(UIButton *)sender;
 -(void)displayDetails;
 
 

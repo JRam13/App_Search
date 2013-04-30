@@ -15,6 +15,9 @@
 @end
 
 @implementation FavoritesViewController
+{
+    NSIndexPath *currIndex;
+}
 
 - (void)viewDidLoad
 {
@@ -92,6 +95,8 @@
        // NSLog(@"Array name %@" , [_favoriteTitles lastObject]);
     }
     
+    
+    
     [self.favoritesCollectionView reloadData];
     
 }
@@ -118,6 +123,7 @@
     [[cell favoriteAuthor]setText:[_favoriteAuthors objectAtIndex:indexPath.item]];
     [[cell favoriteRating]setImage:[_favoriteImageRatings objectAtIndex:indexPath.item]];
     [[cell favoriteImage]setImage:[_favoriteImages objectAtIndex:indexPath.item]];
+    
     return cell;
 }
 
@@ -127,4 +133,38 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    currIndex = indexPath;
+    //NSLog(@"BAM");
+    
+    UIAlertView *deleteAlert;
+    
+    deleteAlert = [[UIAlertView alloc] initWithTitle:nil message:[NSString stringWithFormat:@"Are you sure you want to delete %@?", [_favoriteTitles objectAtIndex:currIndex.item]] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:@"Cancel", nil];
+    
+    
+    [deleteAlert show];
+}
+
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+
+    if (buttonIndex == 0) {
+        AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication]delegate];
+    
+        NSError *error;
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Apps"];
+        fetchRequest.predicate = [NSPredicate predicateWithFormat:@"title == %@", [_favoriteTitles objectAtIndex:currIndex.item]];
+        fetchRequest.propertiesToFetch = [NSArray arrayWithObjects:@"title", nil];
+        NSArray *items = [appDelegate.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+        [appDelegate.managedObjectContext deleteObject:items[0]];
+    
+        if (![appDelegate.managedObjectContext save:&error]) {
+            NSLog(@"Error deleting %@ - error:'IKEA Catalog'", error);
+        }
+    
+        [self fetchData];
+    }
+}
 @end

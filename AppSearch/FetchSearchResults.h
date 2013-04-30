@@ -16,6 +16,7 @@
 @property (strong, nonatomic) NSMutableArray *arrayOfAuthors;
 @property (strong, nonatomic) NSMutableArray *arrayOfRatingsInt;
 @property (strong, nonatomic) NSMutableArray *arrayOfDescriptions;
+@property (strong, nonatomic) NSMutableArray *arrayOfBuyLinks;
 @property (weak, nonatomic) NSString * passURL;
 
 

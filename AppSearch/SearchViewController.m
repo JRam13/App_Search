@@ -49,7 +49,7 @@
     _searchRatingsImages = [[NSMutableArray alloc] init];
     _searchRatingsInt = [[NSMutableArray alloc] init];
     _description = [[NSMutableArray alloc] init];
-
+    _buyLink = [[NSMutableArray alloc]init];
     
     searchResults = [FetchSearchResults sharedInstance];
     _timer = [NSTimer scheduledTimerWithTimeInterval:.2f
@@ -73,6 +73,7 @@
     _searchRatingsImages = searchResults.arrayOfRatings;
     _searchRatingsInt = searchResults.arrayOfRatingsInt;
     _description = searchResults.arrayOfDescriptions;
+    _buyLink = searchResults.arrayOfBuyLinks;
 
     
     [self.searchCollectionView reloadData];
@@ -153,6 +154,7 @@
     dvc2.detailImageBig = [_searchImages objectAtIndex:indexPath.item];
     dvc2.detailImageRating = [_searchRatingsImages objectAtIndex:indexPath.item];
     dvc2.detailDescription = [_description objectAtIndex:indexPath.item];
+    dvc2.detailBuyLink = [_buyLink objectAtIndex:indexPath.item];
     [dvc2 displayDetails];
     
 

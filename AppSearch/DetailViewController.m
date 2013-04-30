@@ -63,7 +63,45 @@
     BOOL isSaved = [appDelegate.managedObjectContext save:&error];
     NSLog(@"Successfully saved flag %d", isSaved);
     
+
+    
                                    
+}
+
+- (IBAction)purchaseBtn:(UIButton *)sender {
+    
+    NSLog(@"URL: %@", self.detailBuyLink);
+    
+    UIAlertView *buyLinkAlert;
+    
+    buyLinkAlert = [[UIAlertView alloc] initWithTitle:nil message:@"Go to the App store?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+    
+    
+    [buyLinkAlert show];
+
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    
+    if (buttonIndex == 1) {
+        
+        
+        
+        if (TARGET_IPHONE_SIMULATOR){
+        alertView = [[UIAlertView alloc] initWithTitle:nil message:@"NOTE: iTunes App Store is not supported on the iOS simulator. Unable to open App Store page." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        
+        [alertView show];
+        }
+        
+        else{
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.detailBuyLink]];
+        }
+        
+    }
+
+
+   
 }
 
 @end
