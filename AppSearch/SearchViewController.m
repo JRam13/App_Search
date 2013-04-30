@@ -164,6 +164,7 @@
     
     
     if (buttonIndex == 0) {
+        
         searchResults.sortByAuthor = YES;
         searchResults.sortByRating = NO;
         
