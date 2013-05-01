@@ -56,7 +56,7 @@
                                               target:self
                                             selector:@selector(reload)
                                             userInfo:nil
-                                             repeats:YES];
+                                             repeats:NO];
 
 }
 
@@ -154,7 +154,7 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     
-    [searchResults.arrayOfTitles removeAllObjects];
+    [_searchTitleLabels removeAllObjects];
     
     _timer = [NSTimer scheduledTimerWithTimeInterval:.2f
                                               target:self

@@ -124,7 +124,7 @@ static FetchSearchResults *sharedInstance = nil;
         NSDictionary *allSearchDataDictionary = [NSJSONSerialization JSONObjectWithData:webData options:0 error:nil];
         cacheDictionary = allSearchDataDictionary;
         [cache setObject:cacheDictionary forKey:replaceSpace];
-        NSLog(@"Contents of cacheDict 2: %@", [cache objectForKey:[NSString stringWithFormat:@"%@", replaceSpace]]);
+        //NSLog(@"Contents of cacheDict 2: %@", [cache objectForKey:[NSString stringWithFormat:@"%@", replaceSpace]]);
         //NSLog(@"allSearchDict OK:");
         //results = [allSearchDataDictionary objectForKey:@"results"];
         //NSLog(@"results OK:");
@@ -225,7 +225,7 @@ static FetchSearchResults *sharedInstance = nil;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         //Fetch Search Results
         [cache setObject:cacheDictionary forKey:replaceSpace];
-        NSLog(@"Contents of cacheDict 2: %@", [cache objectForKey:[NSString stringWithFormat:@"%@", replaceSpace]]);
+        //NSLog(@"Contents of cacheDict 2: %@", [cache objectForKey:[NSString stringWithFormat:@"%@", replaceSpace]]);
         //NSLog(@"allSearchDict OK:");
         //results = [allSearchDataDictionary objectForKey:@"results"];
         //NSLog(@"results OK:");

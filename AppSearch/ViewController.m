@@ -14,6 +14,9 @@
 
 @implementation ViewController
 
+#define IDIOM    UI_USER_INTERFACE_IDIOM()
+#define IPAD     UIUserInterfaceIdiomPad
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -23,6 +26,10 @@
 -(void)viewDidAppear:(BOOL)animated{
     
     self.scrollView.contentSize = CGSizeMake(320,570);
+    
+    if(IDIOM == IPAD){
+        self.scrollView.contentSize = CGSizeMake(768,1175);
+    }
     
 }
 

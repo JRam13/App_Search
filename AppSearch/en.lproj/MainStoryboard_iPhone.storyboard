@@ -374,21 +374,25 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="304" id="b6T-Qx-LVV"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="3" minimumInteritemSpacing="10" id="rWQ-Lf-R1V">
-                                    <size key="itemSize" width="263" height="72"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="10" id="rWQ-Lf-R1V">
+                                    <size key="itemSize" width="263" height="86"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FavoriteCell" id="7ik-6U-sKG" customClass="FavoritesCell">
-                                        <rect key="frame" x="8" y="0.0" width="263" height="72"/>
+                                        <rect key="frame" x="8" y="0.0" width="263" height="86"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="263" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="263" height="86"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="favcell.png" translatesAutoresizingMaskIntoConstraints="NO" id="GlQ-4o-VOs"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="favcell.png" translatesAutoresizingMaskIntoConstraints="NO" id="GlQ-4o-VOs">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="75" id="teC-3H-6Eh"/>
+                                                    </constraints>
+                                                </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x6a-zp-YpZ">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="9ju-8Y-Xaw"/>
@@ -418,23 +422,37 @@
                                                         <constraint firstAttribute="height" constant="27" id="mza-NY-R9W"/>
                                                     </constraints>
                                                 </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="tack.png" translatesAutoresizingMaskIntoConstraints="NO" id="9op-JF-mQU">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="59" id="b9O-j6-6oX"/>
+                                                        <constraint firstAttribute="height" constant="58" id="lr5-b4-WOs"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="tack.png" translatesAutoresizingMaskIntoConstraints="NO" id="SlP-cu-eL5">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="51" id="RLE-nO-iWI"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="GlQ-4o-VOs" firstAttribute="trailing" secondItem="7ik-6U-sKG" secondAttribute="trailing" type="default" id="8DK-F7-AXI"/>
-                                            <constraint firstItem="x6a-zp-YpZ" firstAttribute="centerY" secondItem="GlQ-4o-VOs" secondAttribute="centerY" type="default" id="BdX-b7-57A"/>
-                                            <constraint firstItem="MLm-OC-2uL" firstAttribute="top" secondItem="7ik-6U-sKG" secondAttribute="top" constant="7" id="DUX-Vi-lq4"/>
-                                            <constraint firstItem="x6a-zp-YpZ" firstAttribute="leading" secondItem="7ik-6U-sKG" secondAttribute="leading" constant="36" id="LYf-xl-Qqj"/>
-                                            <constraint firstItem="GlQ-4o-VOs" firstAttribute="top" secondItem="7ik-6U-sKG" secondAttribute="top" type="default" id="RYI-Ox-k3U"/>
+                                            <constraint firstItem="SlP-cu-eL5" firstAttribute="top" secondItem="7ik-6U-sKG" secondAttribute="top" constant="-2" id="HHs-9x-0Fb"/>
+                                            <constraint firstItem="9op-JF-mQU" firstAttribute="trailing" secondItem="7ik-6U-sKG" secondAttribute="trailing" type="default" id="Ieh-Be-A3b"/>
+                                            <constraint firstItem="4yW-eQ-mF8" firstAttribute="top" secondItem="7ik-6U-sKG" secondAttribute="top" constant="41" id="JOL-s6-CSg"/>
                                             <constraint firstItem="WGu-uL-hWs" firstAttribute="leading" secondItem="7ik-6U-sKG" secondAttribute="leading" constant="107" id="S9C-lC-elk"/>
                                             <constraint firstItem="MLm-OC-2uL" firstAttribute="leading" secondItem="7ik-6U-sKG" secondAttribute="leading" constant="98" id="W4F-Xu-IZk"/>
+                                            <constraint firstItem="x6a-zp-YpZ" firstAttribute="leading" secondItem="7ik-6U-sKG" secondAttribute="leading" constant="36" id="aqt-6k-gqq"/>
+                                            <constraint firstItem="9op-JF-mQU" firstAttribute="top" secondItem="7ik-6U-sKG" secondAttribute="top" type="default" id="h7Q-ZS-cW2"/>
+                                            <constraint firstItem="GlQ-4o-VOs" firstAttribute="bottom" secondItem="7ik-6U-sKG" secondAttribute="bottom" type="default" id="hGk-4w-PcY"/>
+                                            <constraint firstAttribute="bottom" secondItem="WGu-uL-hWs" secondAttribute="bottom" constant="4" id="hlr-Sl-Moz"/>
                                             <constraint firstItem="4yW-eQ-mF8" firstAttribute="leading" secondItem="MLm-OC-2uL" secondAttribute="leading" type="default" id="jH3-Wv-b7a"/>
                                             <constraint firstItem="MLm-OC-2uL" firstAttribute="trailing" secondItem="4yW-eQ-mF8" secondAttribute="trailing" type="default" id="lkI-UJ-vLA"/>
-                                            <constraint firstItem="4yW-eQ-mF8" firstAttribute="top" secondItem="7ik-6U-sKG" secondAttribute="top" constant="31" id="pmJ-GU-m2j"/>
-                                            <constraint firstItem="WGu-uL-hWs" firstAttribute="bottom" secondItem="7ik-6U-sKG" secondAttribute="bottom" type="default" id="qeY-jX-Zut"/>
                                             <constraint firstItem="GlQ-4o-VOs" firstAttribute="leading" secondItem="7ik-6U-sKG" secondAttribute="leading" type="default" id="r9S-Gy-seB"/>
-                                            <constraint firstItem="GlQ-4o-VOs" firstAttribute="bottom" secondItem="7ik-6U-sKG" secondAttribute="bottom" type="default" id="xdd-rv-HuR"/>
+                                            <constraint firstItem="MLm-OC-2uL" firstAttribute="top" secondItem="7ik-6U-sKG" secondAttribute="top" constant="15" id="s9g-bY-YXQ"/>
+                                            <constraint firstItem="GlQ-4o-VOs" firstAttribute="centerY" secondItem="x6a-zp-YpZ" secondAttribute="centerY" type="default" id="ssG-lv-cXS"/>
+                                            <constraint firstItem="SlP-cu-eL5" firstAttribute="leading" secondItem="7ik-6U-sKG" secondAttribute="leading" constant="14" id="ywQ-Mm-QYE"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="favoriteAuthor" destination="4yW-eQ-mF8" id="cZY-cM-jsX"/>
@@ -795,108 +813,8 @@
         <image name="mainban.png" width="320" height="99"/>
         <image name="searchbck.jpg" width="327" height="491"/>
         <image name="searchcell.png" width="302" height="81"/>
+        <image name="tack.png" width="55" height="89"/>
     </resources>
-    <classes>
-        <class className="AlbumsCell" superclassName="UICollectionViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AlbumsCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="albumButtonImage" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="albumLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="AlbumsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AlbumsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="AlbumsCollectionView" candidateClass="UICollectionView"/>
-            </relationships>
-        </class>
-        <class className="AppsCell" superclassName="UICollectionViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AppsCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="appsButtonImage" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="appsLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="AppsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AppsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="AppsCollectionView" candidateClass="UICollectionView"/>
-            </relationships>
-        </class>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="addToFavorites:" candidateClass="UIButton"/>
-                <relationship kind="action" name="dismissBTN:" candidateClass="UIButton"/>
-                <relationship kind="action" name="purchaseBtn:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="detailAuthorLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="detailDescriptionText" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="detailImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="detailPriceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="detailRanking" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="detailTitleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="FavoritesCell" superclassName="UICollectionViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FavoritesCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="favoriteAuthor" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="favoriteImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="favoriteRating" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="favoriteTitle" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="FavoritesViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FavoritesViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="favoritesCollectionView" candidateClass="UICollectionView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SearchCell" superclassName="UICollectionViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="searchAuthorLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="searchImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="searchPriceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="searchRatingsImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="searchTitleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="SearchHeader" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchHeader.h"/>
-            <relationships>
-                <relationship kind="outlet" name="SearchStarImageLeft" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SearchStarImageRight" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="searchHeaderLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="SearchViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
-                <relationship kind="outlet" name="searchCollectionView" candidateClass="UICollectionView"/>
-            </relationships>
-        </class>
-        <class className="UICollectionReusableView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
-        </class>
-        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
-        </class>
-        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="view1" candidateClass="UIView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
